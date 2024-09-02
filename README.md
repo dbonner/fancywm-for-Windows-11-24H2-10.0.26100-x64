@@ -46,6 +46,7 @@ In Visual Studio 2022:
     Properties:
 		 	Change both "Target OS version" and "Supported OS version" to:
 		 		10.0.26100.0
+For the NuGet Packages:
 
 	Right click the root of the Solution Explorer tree ["Solution 'ModernWpf' (16 of 16 projects)"] and select "Manage NuGet packages for Solution".
 		Update all NuGet packages except:
