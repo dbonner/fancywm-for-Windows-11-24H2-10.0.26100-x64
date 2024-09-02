@@ -18,7 +18,7 @@ In Visual Studio 2022:
 
   Open FancyWM.sln
 
-  Set build to Release and x64.
+  Set build with Configuration Manager to "Release" and "x64".
 
   For each of the following 5 project names in Solution Explorer: 
 
