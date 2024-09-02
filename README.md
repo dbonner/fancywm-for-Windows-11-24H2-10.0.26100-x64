@@ -1,9 +1,17 @@
 # FancyWM
 
 This is a slightlly modified FancyWM fork, which has some minor modificatios for Windows 11 24H2 x64 (version 10.0.26100.0).
+
 I noted that there is a FancyWM startup message stating that FancyWM is not compatible with my Windows 11 version (24H2).
+
 I also noticed that FancyWM crashed a couple of times when I used it with Windows 11 24H2.
-I have no great C Sharp or .NET skills. I ended up using Visual Studio 2022's GUI to make all the changes to the code. I modified the properties of the projects contained in FancyWM.sln so that the target OS and .NET8 versions became Windows 11 24H2 (10.0.26100.0). I also updated most of the NuGet packages. The NuGet packages that I did not update were: "Hardcodet.NotifyIcon.Wpf.NetCore (left at version 1.0.18)" and "Microsoft.Windows.CsWin32 (left at version 0.1.422-beta)". The app did not start properly if these NuGet packages were updated.
+
+I have no great C Sharp or .NET skills. I ended up using Visual Studio 2022's GUI to make all the changes to the code.
+
+I modified the properties of the projects contained in FancyWM.sln so that the target OS and .NET8 versions became Windows 11 24H2 (10.0.26100.0).
+
+I also updated most of the NuGet packages. The NuGet packages that I did not update were: "Hardcodet.NotifyIcon.Wpf.NetCore (left at version 1.0.18)" and "Microsoft.Windows.CsWin32 (left at version 0.1.422-beta)". The app did not start properly if these NuGet packages were updated.
+
 The whole process is summarised as follows:
 
 In Visual Studio 2022:
