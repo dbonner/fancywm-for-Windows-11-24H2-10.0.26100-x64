@@ -1,6 +1,6 @@
 [submodule "ModernWpf"]
 	path = ModernWpf
-	url = https://github.com/dbonner/ModernWpf-Windows-24H2-x64.git
+	url = https://github.com/dbonner/ModernWpf-for-Windows-24H2-x64.git
 [submodule "winman"]
 	path = winman
 	url = https://github.com/dbonner/winman-Windows-24H2-x64.git
