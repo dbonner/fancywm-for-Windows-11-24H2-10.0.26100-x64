@@ -1,9 +1,9 @@
 [submodule "ModernWpf"]
 	path = ModernWpf
-	url = https://github.com/veselink1/ModernWpf.git
+	url = https://github.com/dbonner/ModernWpf-Windows-24H2-x64.git
 [submodule "winman"]
 	path = winman
-	url = https://github.com/FancyWM/winman.git
+	url = https://github.com/dbonner/winman-Windows-24H2-x64.git
 [submodule "winman-windows"]
 	path = winman-windows
-	url = https://github.com/FancyWM/winman-windows.git
+	url = https://github.com/dbonner/winman-windows-for-Windows-24H2-x64.git
