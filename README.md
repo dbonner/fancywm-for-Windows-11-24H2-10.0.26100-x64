@@ -1,8 +1,49 @@
 # FancyWM
 
 This is a slightlly modified FancyWM fork, which has some minor modificatios for Windows 11 24H2 x64 (version 10.0.26100.0).
+I noted that there is a FancyWM startup message stating that FancyWM is not compatible with my Windows 11 version (24H2).
+I also noticed that FancyWM crashed a couple of times when I used it with Windows 11 24H2.
+I have no great C Sharp or .NET skills. I ended up using Visual Studio 2022's GUI to make all the changes to the code. I modified the properties of the projects contained in FancyWM.sln so that the target OS and .NET8 versions became Windows 11 24H2 (10.0.26100.0). I also updated most of the NuGet packages. The NuGet packages that I did not update were: "Hardcodet.NotifyIcon.Wpf.NetCore (left at version 1.0.18)" and "Microsoft.Windows.CsWin32 (left at version 0.1.422-beta)". The app did not start properly if these NuGet packages were updated.
+The whole process is summarised as follows:
+
+In Visual Studio 2022:
+  Open FancyWM.sln
+  Set build to Release and x64.
+	For each of the following 5 project names in Solution Explorer: 
+
+	1. FancyWM
+		 Properties:
+		 	Change both "Target OS version" and "Supported OS version" to:
+		 		10.0.26100.0
+
+	2. FancyWM.Package
+		Properties:
+		 	Change both "Target version" and "Min version" to:
+		 		Windows 10, version 24H2 (10.0; Build 26100)
+
+	3. FancyWM.Tests
+		 Properties:
+		 	Change both "Target OS version" and "Supported OS version" to:
+		 		10.0.26100.0
+
+	4. ModernWpf
+		Properties:
+		 	Change both "Target frameworks" to:
+		 		net8.0-windows10.0.26100.0
+
+	5. WinMan.Windows
+    Properties:
+		 	Change both "Target OS version" and "Supported OS version" to:
+		 		10.0.26100.0
+
+	Right click the root of the Solution Explorer tree ["Solution 'ModernWpf' (16 of 16 projects)"] and select "Manage NuGet packages for Solution".
+		Update all NuGet packages except:
+			Hardcodet.NotifyIcon.Wpf.NetCore (leave at version 1.0.18)
+			Microsoft.Windows.CsWin32 (leave at version 0.1.422-beta)
+
 I'm not sure if I have usefully improved the experience or stability of FancyWM on Windows 11 24H2.
 If my FancyWM fork is at all useful, all credit goes to the FancyWM dev: Vesko Karaganev (@veselink1).
+Daniel (@dbonner)
 
 [![Gitter](https://badges.gitter.im/FancyWM/community.svg)](https://gitter.im/FancyWM/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
