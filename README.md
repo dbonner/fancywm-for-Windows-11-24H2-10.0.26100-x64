@@ -54,7 +54,9 @@ For the NuGet Packages:
 			Microsoft.Windows.CsWin32 (leave at version 0.1.422-beta)
 
 I'm not sure if I have usefully improved the experience or stability of FancyWM on Windows 11 24H2.
+
 If my FancyWM fork is at all useful, all credit goes to the FancyWM dev: Vesko Karaganev (@veselink1).
+
 Daniel (@dbonner)
 
 [![Gitter](https://badges.gitter.im/FancyWM/community.svg)](https://gitter.im/FancyWM/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
