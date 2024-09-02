@@ -15,9 +15,12 @@ I also updated most of the NuGet packages. The NuGet packages that I did not upd
 The whole process is summarised as follows:
 
 In Visual Studio 2022:
+
   Open FancyWM.sln
+
   Set build to Release and x64.
-	For each of the following 5 project names in Solution Explorer: 
+
+  For each of the following 5 project names in Solution Explorer: 
 
 	1. FancyWM
 		 Properties:
